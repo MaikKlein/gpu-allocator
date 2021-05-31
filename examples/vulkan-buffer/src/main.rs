@@ -93,7 +93,8 @@ fn main() {
         device: device.clone(),
         physical_device: pdevice,
         debug_settings: Default::default(),
-    });
+    })
+    .unwrap();
 
     // Test allocating GPU Only memory
     {

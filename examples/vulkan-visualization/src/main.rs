@@ -229,7 +229,8 @@ fn main() {
             device: device.clone(),
             physical_device: pdevice,
             debug_settings: Default::default(),
-        });
+        })
+        .unwrap();
 
         let fence_create_info =
             vk::FenceCreateInfo::builder().flags(vk::FenceCreateFlags::SIGNALED);
