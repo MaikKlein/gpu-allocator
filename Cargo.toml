@@ -17,7 +17,8 @@ include = [
 ]
 
 [dependencies]
-ash = "0.32"
+# ash = "0.32"
+ash = {git = "https://github.com/MaikKlein/ash"}
 backtrace = "0.3"
 log = "0.4"
 thiserror = "1.0"
